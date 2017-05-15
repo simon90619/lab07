@@ -1,15 +1,15 @@
 #include <LiquidCrystal.h>
 // 定義接腳
-LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
+LiquidCrystal lcd(12, 7, 5, 4, 3, 2);
 void setup(){
  lcd.begin(16, 2);
- lcd.print("03053613,03050841"); 
+ lcd.print("03050371"); 
  Serial.begin(9600);
 }
 void loop()
 {
   lcd.setCursor(0, 1);
-  lcd.print("Toyz,Bebe"); 
+  lcd.print("hank"); 
 
  if (Serial.available()) {
    
